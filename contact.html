@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+	<title>Me contacter - Evran Gunes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="author" href="https://www.linkedin.com/in/evrangunes" />
+	<link rel="icon" href="images/favicon.ico" />
+	<meta charset="utf-8"/>
+	<meta name="description" content="Développeur full-stack web junior : Création de sites, Créateur d'applications, Référenceur, Webmarketing. html, MySQL, JQuery, Bootstrap, UX, UI..."/>
+	<meta property="og:title" content="Me contacter - Evran Gunes"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://www.evrangunes.github.io/"/>
+	<meta property="og:image" content="http://www.evrangunes.github.io/images/photo.jpg"/>
+	<meta property="og:description" content="Développeur full-stack web junior : Création de sites, Créateur d'applications, Référenceur, Webmarketing. html, MySQL, JQuery, Bootstrap, UX, UI..."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Chargement Royal CSS-->
+	<link href="css/royal_preloader.css" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Chargement page -->
+	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+		Royal_Preloader.config({
+		    mode:           'number',
+		    showProgress:   false,
+		    background:     '#fff'
+		});
+	</script>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Mon CSS -->
+	<link href="css/style.css" rel="stylesheet" title="main-css">
+	<!-- Icones Ion -->
+	<link href="css/ionicons.min.css" rel="stylesheet">
+	<!-- Icones Stroke7 -->
+	<link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+	<!-- Popup -->
+	<link href="css/magnific-popup.css" rel="stylesheet">
+
+</head>
+<body class="body-static-navbar royal_preloader">
+
+	<!-- Chargement Royal -->
+	<div id="royal_preloader"></div>
+
+	<!-- Header -->
+	<header>
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-spacing-top-static">
+			<div class="container">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand scroll-top"><h3 class="mb20"><span class="paragraph-logo">|EG</span></h3></a>
+				</div>
+
+				<!-- Menus -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">CV</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div><!-- fin navbar collapse -->
+			</div><!-- fin container -->
+		</nav><!-- fin nav -->
+	</header>
+
+	<!-- Contact -->
+	<section id="contact" class="section-padding section-border-top">
+		<div class="container">
+			<!-- Titre -->
+			<div class="row mb40">
+				<div class="col-xs-12 text-center">
+					<h2>Me contacter</h2>
+					<br>
+					<p class="mb20">Formulaire momentanément indisponible, veuillez me contacter sur <a href="https://medusa-agence.fr/contact.html">ce lien :</a></p>
+					
+					<span class="divider divider-center divider-dark no-margin-bottom"></span>
+				</div><!-- fin colonne -->
+			</div><!-- fin row -->
+
+			<!-- Formulaire -->
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<form data-toggle="validator" id="contactForm" name="contactForm">
+
+						<!-- Sujet -->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="controls">
+										<input class="form-control" data-error="Remplissage obligatoire" id="msg_subject" placeholder="Sujet" required="" type="text" disabled>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div><!-- fin colonne -->
+						</div><!-- fin row -->
+
+						<!-- Nom -->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="controls">
+										<input class="form-control" data-error="Remplissage obligatoire" id="name" placeholder="Nom" required="" type="text" disabled>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div><!-- fin colonne -->
+						</div><!-- fin row -->
+
+						<!-- Email -->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="controls">
+										<input class="email form-control" data-error="Remplissage obligatoire" id="email" placeholder="E-mail" required="" type="email" disabled>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div><!-- fin colonne -->
+						</div><!-- fin row -->
+
+						<!-- Message -->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="controls">
+										<textarea class="form-control" data-error="Remplissage obligatoire" id="message" required="" rows="5" placeholder="Votre message" disabled ></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Envoyer -->
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<div id="msgSubmit" class="h4 hidden"></div>
+							</div><!-- fin colonne -->
+						</div>
+
+						<!-- Button -->
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<button type="submit" id="submit" class="btn btn-primary btn-lg">Envoyer</button>
+							</div><!-- fin colonne -->
+						</div><!-- fin row -->
+
+						<div class="row hidden-xs" style="margin-top: 30px;">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82924.57378269381!2d0.06122537980767299!3d49.49597335522145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02f761e1e12fd%3A0x9dcf70b5e7fe19d0!2sCr%C3%A9ateur+de+site+web+-+Freelance!5e0!3m2!1sfr!2sfr!4v1489327237394" width="580" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</form><!-- /.form -->
+				</div><!-- fin colonne -->
+			</div><!-- fin row -->
+		</div><!-- fin row -->
+	</section>
+
+	<!-- Informations de contact -->
+	<section id="contact-information">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 text-center leftReveal">
+					<span class="dark-icon mb5 pe-7s-home"></span>
+					<h5 class="no-margin-bottom spaced">Le Havre, Nantes</h5>
+				</div><!-- fin colonne -->
+
+				<div class="col-sm-4 mt30-xs text-center bottomReveal">
+					<span class="dark-icon mb5 pe-7s-phone"></span>
+					<h5 class="no-margin-bottom spaced">07 82 94 13 66</h5>
+				</div><!-- fin colonne -->
+
+				<div class="col-sm-4 mt30-xs text-center topReveal">
+					<span class="dark-icon mb5 pe-7s-add-user"></span>
+					<h5 class="no-margin-bottom spaced">evrangunes@gmail.com</h5>
+				</div><!-- fin colonne -->
+			</div><!-- fin row -->
+		</div><!-- fin row -->
+	</section>
+
+	<!-- Footer -->
+	<footer class="page-footer">
+		<div class="container">
+			<!-- Droits -->
+			<div class="row">
+				<div class="col-md-12 text-center">
+					&copy; 2017 <a href="index.html">Evran GUNES</a>. Tous droits réservés.
+				</div><!-- fin colomne -->
+			</div><!-- fin row -->
+		</div><!-- fin container -->
+	</footer>
+
+
+	<!-- Javascript -->
+	<script>
+  (function() {
+    var script   = document.createElement('script');
+    script.src   = '//api.codeur.com/widgets/profile.js?k=Oj9tBVL_DKnY3LM7';
+    script.async = true;
+
+    var entry = document.getElementsByTagName('script')[0];
+    entry.parentNode.insertBefore(script, entry);
+  })();
+</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&amp;callback=initMap" async defer></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/form-validator.min.js"></script>
+	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+	<script type="text/javascript">
+		/* ---- Portfolio Isotope ---- */
+		$(document).ready(function(){
+			var $grid = $('.grid').isotope({
+			    layoutMode: 'masonry'
+			});
+			$('.filter-button-group').on('click', 'li', function() {
+			    var filterValue = $(this).attr('data-filter');
+			    $grid.isotope({
+			        filter: filterValue
+			    });
+			});
+			$(".filter-button-group").each(function(t, e) {
+			    var i = $(e);
+			    i.on("click", "li", function() {
+			        i.find(".active").removeClass("active"), $(this).addClass("active")
+			    })
+			});
+		});
+	</script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-92610284-1', 'auto');
+	  ga('send', 'pageview');
+	 </script>
+
+</body>
+</html>
